@@ -282,32 +282,34 @@ body {
 
 /*worked*/
 
-.work_container {
-    padding: 200px;
+.worka {
+    padding: var(--padding-container);
     text-align: center;
 }
 
 .works {
-    padding-top: 40px;
-    display: grid;
+    padding-top: 60px;
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2em;
-    overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
 }
 
 .work {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1em;
-    justify-items: center;
     width: 260px;
     overflow: hidden;
-    margin: auto;
     border-radius: 10px;
     box-shadow: 0px 0px 20px #ccc;
     margin-bottom: 20px;
+    text-align: center;
 }
+
+
 .img_trabajo {
     border-radius: 5px;
     max-width: 100%;
