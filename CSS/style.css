@@ -159,9 +159,8 @@ body {
 }
 
 .about_icons {
-    display: grid;
+    display: flex;
     gap: 1em;
-    justify-items: center;
     width: 300px;
     overflow: hidden;
     margin: auto;
@@ -169,6 +168,9 @@ body {
     box-shadow: 0px 0px 20px #ccc;
     margin-top: 10px;
     margin-bottom: 20px;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about_icon {
@@ -184,7 +186,7 @@ body {
     background-position: 0 0, 10px 10px;
     overflow: hidden;
 }
-
+/*arreglar en modo cel*/
 .knowledge_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -203,9 +205,12 @@ body {
 
 .knowledge_img {
     width: 100%;
-    display: block;
+    display: flex;
     border-radius: 20px;
-    height: 600px;
+    height: auto;
+    max-height: 100vh;
+    max-width: 100vh;
+    min-width: 10rem;
 }
 
 
@@ -610,8 +615,9 @@ body {
         justify-content: center;
     }
 
-
 }
+
+
 @media (max-width:1000px) {
     .about_icons:last-of-type {
         grid-column: 1/-1;
@@ -619,5 +625,12 @@ body {
 
     .bottom_contact {
         margin: 5px;
+    }
+}
+
+@media (max-width:490px) {
+
+    .knowledge_img {
+        display: flexbox;
     }
 }
