@@ -475,6 +475,11 @@ body {
     margin-bottom: 30px;
 }
 
+.cv_bottom {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /*Footer*/
 .footer {
     background-color: #1d293f;
