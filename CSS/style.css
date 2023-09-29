@@ -273,8 +273,8 @@ body {
 }
 
 .testimony_body {
-    display: grid;
-    grid-template-columns: 1fr max-content;
+    display: flex;
+   /* grid-template-columns: 1fr max-content; */
     justify-content: space-between;
     align-items: center;
     gap: 2em;
@@ -542,11 +542,13 @@ body {
     }
 
     .testimony_body {
-        grid-template-columns: 1fr;
+        /*grid-template-columns: 1fr;*/
+        display: flex;
+        flex-direction: column;
         justify-items: center;
         justify-content: center;
     }
-
+    
 }
 
 
@@ -561,8 +563,34 @@ body {
 }
 
 @media (max-width:490px) {
+    .knowledge_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 
-    .knowledge_img {
-        display: flexbox;
+    .testimony_body--show {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .testimony_container {
+        grid-template-columns: 30px 1fr 30px; /* Reduce el tamaño de las columnas*/
+    }
+
+    .testimony_body {
+        flex-direction: column; /*Colola los objetos en columna*/
+        gap: 1em;
+        text-align: center;
+    }
+
+    .testimony_texts {
+        max-width: none; /*Elimina la restriccion de tamaño*/
+    }
+
+    .testimony_img {
+        width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible del contenedor */
     }
 }
