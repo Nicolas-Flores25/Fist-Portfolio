@@ -187,6 +187,7 @@ body {
     background-position: 0 0, 10px 10px;
     overflow: hidden;
 }
+
 /*arreglar en modo cel*/
 .knowledge_container {
     display: grid;
@@ -201,6 +202,7 @@ body {
 
 .knowledge_text {
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .knowledge_paragraph {
@@ -257,7 +259,8 @@ body {
     object-fit: cover;
 }
 
-.worked_paragraph, .titulo {
+.worked_paragraph,
+.titulo {
     text-align: center;
 }
 
@@ -308,7 +311,7 @@ body {
     padding-top: 50px;
     padding-bottom: 0;
     margin: 0;
-    
+
 }
 
 .testimony_texts {
@@ -430,7 +433,7 @@ body {
 }
 
 .footer_container {
-    display: flex ;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #fff;
@@ -551,7 +554,7 @@ body {
         justify-items: center;
         justify-content: center;
     }
-    
+
 }
 
 
@@ -580,21 +583,25 @@ body {
 
 @media screen and (max-width: 420px) {
     .testimony_container {
-        grid-template-columns: 30px 1fr 30px; /* Reduce el tamaño de las columnas*/
+        grid-template-columns: 30px 1fr 30px;
+        /* Reduce el tamaño de las columnas*/
     }
 
     .testimony_body {
-        flex-direction: column; /*Colola los objetos en columna*/
+        flex-direction: column;
+        /*Colola los objetos en columna*/
         gap: 1em;
         text-align: center;
     }
 
     .testimony_texts {
-        max-width: none; /*Elimina la restriccion de tamaño*/
+        max-width: none;
+        /*Elimina la restriccion de tamaño*/
     }
 
     .testimony_img {
-        width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible del contenedor */
+        width: 100%;
+        /* Hacer que la imagen ocupe el 100% del ancho disponible del contenedor */
         height: auto;
         padding: 0;
     }
