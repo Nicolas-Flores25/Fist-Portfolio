@@ -149,12 +149,13 @@ body {
 
 .about_main {
     padding-top: 40px;
-    display: grid;
-    width: 90%;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: 25px;
     justify-items: center;
-    gap: 1em;
+    gap: 3em;
     overflow: hidden;
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
 }
@@ -196,6 +197,10 @@ body {
 
 .knowledge_picture {
     max-width: 500px;
+}
+
+.knowledge_text {
+    margin-left: 20px;
 }
 
 .knowledge_paragraph {
