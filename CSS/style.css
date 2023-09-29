@@ -274,7 +274,6 @@ body {
 
 .testimony_body {
     display: flex;
-   /* grid-template-columns: 1fr max-content; */
     justify-content: space-between;
     align-items: center;
     gap: 2em;
@@ -542,7 +541,6 @@ body {
     }
 
     .testimony_body {
-        /*grid-template-columns: 1fr;*/
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -592,5 +590,7 @@ body {
 
     .testimony_img {
         width: 100%; /* Hacer que la imagen ocupe el 100% del ancho disponible del contenedor */
+        height: auto;
+        padding: 0;
     }
 }
