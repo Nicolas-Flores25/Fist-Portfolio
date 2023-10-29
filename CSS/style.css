@@ -301,7 +301,7 @@ body {
 .testimony_img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+    border-radius: 100%;
     object-fit: cover;
     object-position: 50% 30%;
 }
@@ -546,6 +546,7 @@ body {
 
     .testimony_container {
         grid-template-columns: 30px 1fr 30px;
+
     }
 
     .testimony_body {
@@ -553,6 +554,10 @@ body {
         flex-direction: column;
         justify-items: center;
         justify-content: center;
+    }
+
+    .testimony_texts {
+        text-align: center;
     }
 
 }
@@ -600,9 +605,6 @@ body {
     }
 
     .testimony_img {
-        width: 100%;
-        /* Hacer que la imagen ocupe el 100% del ancho disponible del contenedor */
-        height: auto;
         padding: 0;
     }
 }
