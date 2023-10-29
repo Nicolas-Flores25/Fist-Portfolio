@@ -588,13 +588,11 @@ body {
 
 @media screen and (max-width: 420px) {
     .testimony_container {
-        grid-template-columns: 30px 1fr 30px;
-        /* Reduce el tamaño de las columnas*/
+        grid-template-columns: 22px 1fr 22px;
     }
 
     .testimony_body {
         flex-direction: column;
-        /*Colola los objetos en columna*/
         gap: 1em;
         text-align: center;
     }
