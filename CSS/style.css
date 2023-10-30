@@ -188,7 +188,7 @@ body {
     overflow: hidden;
 }
 
-/*arreglar en modo cel*/
+
 .knowledge_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -224,7 +224,7 @@ body {
 /*worked*/
 
 .worka {
-    padding: var(--padding-container);
+    margin: 300px;
     text-align: center;
 }
 
@@ -241,7 +241,7 @@ body {
 .work {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: .6em;
     width: 260px;
     overflow: hidden;
     border-radius: 10px;
@@ -262,6 +262,11 @@ body {
 .worked_paragraph,
 .titulo {
     text-align: center;
+}
+
+.cooming_soon {
+
+    margin: auto;
 }
 
 
