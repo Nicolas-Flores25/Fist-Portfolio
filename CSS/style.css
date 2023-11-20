@@ -250,6 +250,15 @@ body {
     text-align: center;
 }
 
+.work a {
+    text-decoration: none; 
+    color: #000;
+}
+
+
+.work a:hover {
+    color: #2980b9; 
+}
 
 .img_trabajo {
     border-radius: 5px;
