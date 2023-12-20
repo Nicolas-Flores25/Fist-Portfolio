@@ -14,6 +14,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -227,49 +228,27 @@ html {
 
 /*worked*/
 
-.worka {
-    margin: var(--padding-container);
+.work_a {
     text-align: center;
+    margin: 20px;
 }
 
 .works {
-    padding-top: 60px;
-    width: 90%;
-    margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
 }
 
-.work {
-    display: flex;
-    flex-direction: column;
-    gap: .6em;
-    width: 260px;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #ccc;
-    margin-bottom: 20px;
-    text-align: center;
+.trabajo {
+    vertical-align: top;
 }
 
-.work a {
-    text-decoration: none; 
-    color: #000;
-}
-
-
-.work a:hover {
-    color: #2980b9; 
-}
-
-.img_trabajo {
-    border-radius: 5px;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    object-fit: cover;
+.trabajo img {
+    width: 100%;
+    opacity: .7;
+    vertical-align: top;
 }
 
 .worked_paragraph,
